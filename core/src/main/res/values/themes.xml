@@ -10,6 +10,11 @@
 
     <style name="Theme.NyTimesSample" parent="Base.Theme.NyTimesSample" />
 
+    <style name="SplashScreenTheme" parent="Theme.NyTimesSample">
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+
     <style name="TextStyle">
         <item name="android:textColor">@color/black</item>
         <item name="fontFamily">@font/play_fair_regular</item>

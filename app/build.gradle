@@ -22,6 +22,12 @@ android {
 
 dependencies {
     implementation project(':core')
+    implementation project(':freatures:main')
+    implementation project(':freatures:splash')
+
+    implementation project(':freatures:auth:base')
+    implementation project(':freatures:auth:login')
+    implementation project(':freatures:auth:register')
 }
 
 apply from: rootDir.path + "/sub_project.gradle"

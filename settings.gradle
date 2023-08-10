@@ -16,3 +16,10 @@ dependencyResolutionManagement {
 rootProject.name = "NyTimesSample"
 include ':app'
 include ':core'
+
+//Features
+include ':freatures:splash'
+include ':freatures:main'
+include ':freatures:auth:login'
+include ':freatures:auth:register'
+include ':freatures:auth:base'
