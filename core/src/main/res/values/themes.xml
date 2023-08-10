@@ -1,0 +1,43 @@
+<resources>
+
+    <style name="Base.Theme.NyTimesSample" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/gray_20</item>
+        <item name="colorSurface">@color/white</item>
+    </style>
+
+    <style name="Theme.NyTimesSample" parent="Base.Theme.NyTimesSample" />
+
+    <style name="TextStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/play_fair_regular</item>
+    </style>
+
+    <style name="TextStyle.Header">
+        <item name="android:textSize">22sp</item>
+        <item name="fontFamily">@font/play_fair_bold</item>
+    </style>
+
+    <style name="TextStyle.Body">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/play_fair_medium</item>
+    </style>
+
+    <style name="TextStyle.Paragraph">
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/play_fair_regular</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense">
+        <item name="boxBackgroundColor">@color/gray_20</item>
+        <item name="boxStrokeWidth">0.8dp</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="fontFamily">@font/play_fair_medium</item>
+    </style>
+
+</resources>
