@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="userModel"
+            type="com.sami.core.datastore.models.UserDataModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_view_profile_pic"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/gray_20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/nytimes_splash_logo" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_view_full_name"
+            style="@style/TextStyle.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:text="@{userModel.fullName}"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/image_view_profile_pic"
+            app:layout_constraintTop_toTopOf="@+id/image_view_profile_pic"
+            tools:text="Sami Shorman" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_view_email"
+            style="@style/TextStyle.Paragraph"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@{userModel.email}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/image_view_profile_pic"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_full_name"
+            tools:text="sami.shorman3000@gmail.com" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_view_details_title"
+            style="@style/TextStyle.Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Details"
+            app:layout_constraintStart_toStartOf="@+id/image_view_profile_pic"
+            app:layout_constraintTop_toBottomOf="@+id/image_view_profile_pic" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linear_layout_user_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@+id/text_view_email"
+            app:layout_constraintStart_toStartOf="@+id/text_view_details_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_details_title">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_national_id_title"
+                style="@style/TextStyle.Body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="National ID" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_national_id"
+                style="@style/TextStyle.Paragraph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@{userModel.nationalId}"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="2000097777" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_phone_number_title"
+                style="@style/TextStyle.Body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Phone Number" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_phone_number"
+                style="@style/TextStyle.Paragraph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@{userModel.phoneNumber}"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="0782266316" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_date_of_birth_title"
+                style="@style/TextStyle.Body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Date of Birth" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_date_of_birth"
+                style="@style/TextStyle.Paragraph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@{userModel.dateOfBirth}"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="18/6/1997" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_view_settings_title"
+            style="@style/TextStyle.Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Settings"
+            app:layout_constraintStart_toStartOf="@+id/image_view_profile_pic"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_user_details" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/linear_layout_user_details"
+            app:layout_constraintStart_toStartOf="@+id/text_view_settings_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_settings_title" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Logout"
+            android:textAllCaps="false"
+            app:icon="@drawable/ic_logout"
+            app:layout_constraintStart_toStartOf="@+id/view_line"
+            app:layout_constraintTop_toBottomOf="@+id/view_line" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

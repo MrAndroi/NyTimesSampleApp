@@ -6,6 +6,8 @@
 
         <item name="colorSecondary">@color/gray_20</item>
         <item name="colorSurface">@color/white</item>
+
+        <item name="colorSecondaryContainer">@color/gray_20</item>
     </style>
 
     <style name="Theme.NyTimesSample" parent="Base.Theme.NyTimesSample" />

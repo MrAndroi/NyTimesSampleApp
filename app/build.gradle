@@ -28,6 +28,8 @@ dependencies {
     implementation project(':freatures:auth:base')
     implementation project(':freatures:auth:login')
     implementation project(':freatures:auth:register')
+
+    implementation project(':freatures:more')
 }
 
 apply from: rootDir.path + "/sub_project.gradle"
