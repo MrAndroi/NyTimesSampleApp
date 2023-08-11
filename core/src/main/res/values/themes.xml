@@ -21,7 +21,7 @@
     </style>
 
     <style name="TextStyle.Header">
-        <item name="android:textSize">22sp</item>
+        <item name="android:textSize">24sp</item>
         <item name="fontFamily">@font/play_fair_bold</item>
     </style>
 

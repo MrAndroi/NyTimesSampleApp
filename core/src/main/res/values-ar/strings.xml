@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NyTimesSample</string>
+    <string name="ok">حسنا</string>
+    <string name="error_message_email">بريد إلكتروني غير صحيح</string>
+    <string name="error_message_password">كلمة مرور ضعيفة: يجب أن تحتوي على 8 أحرف على الأقل بحرف كبير واحد ورقم واحد</string>
+    <string name="error_message_full_name">اسم كامل غير صالح</string>
+    <string name="error_message_phone_number">رقم هاتف غير صالح</string>
+    <string name="error_message_date_of_birth">تنسيق تاريخ غير صالح، استخدم (يوم/شهر/سنة)</string>
+    <string name="error_message_national_id">رقم هوية وطنية غير صالح</string>
+</resources>

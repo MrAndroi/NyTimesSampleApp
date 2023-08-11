@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_message_email_already_registered">البريد الإلكتروني مُسجل بالفعل، يُرجى تسجيل الدخول</string>
+</resources>
