@@ -4,10 +4,10 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class UserDataModel(
-    val fullName: String,
     val email: String,
-    val nationalId: String,
-    val phoneNumber: String,
-    val dateOfBirth: String,
     val password: String,
+    val fullName: String? = null,
+    val nationalId: String? = null,
+    val phoneNumber: String? = null,
+    val dateOfBirth: String? = null,
 )
