@@ -8,4 +8,5 @@
     <string name="error_message_phone_number">رقم هاتف غير صالح</string>
     <string name="error_message_date_of_birth">تنسيق تاريخ غير صالح، استخدم (يوم/شهر/سنة)</string>
     <string name="error_message_national_id">رقم هوية وطنية غير صالح</string>
+    <string name="general_error">حدث خطأ ما!</string>
 </resources>

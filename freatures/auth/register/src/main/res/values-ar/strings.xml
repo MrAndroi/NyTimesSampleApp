@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="error_message_email_already_registered">البريد الإلكتروني مُسجل بالفعل، يُرجى تسجيل الدخول</string>
+    <string name="full_name">الاسم الكامل</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="national_id">الرقم الوطني</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="date_of_birth">تاريخ الميلاد</string>
+    <string name="password">كلمة المرور</string>
+    <string name="register">تسجيل</string>
 </resources>

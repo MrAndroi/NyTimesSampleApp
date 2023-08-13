@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="data">البيانات</string>
+    <string name="sort"><u>ترتيب</u></string>
+    <string name="search">بحث</string>
+    <string name="sorry_can_t_find_any_result">عذرًا، لا يمكن العثور على أي نتائج</string>
+</resources>

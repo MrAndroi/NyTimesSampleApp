@@ -30,6 +30,7 @@ dependencies {
     implementation project(':freatures:auth:register')
 
     implementation project(':freatures:more')
+    implementation project(':freatures:dashboard')
 }
 
 apply from: rootDir.path + "/sub_project.gradle"

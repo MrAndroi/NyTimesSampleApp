@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="details">تفاصيل</string>
+    <string name="national_id">الرقم الوطني</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="date_of_birth">تاريخ الميلاد</string>
+    <string name="settings">الإعدادات</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="change_language">تغيير اللغة</string>
+</resources>

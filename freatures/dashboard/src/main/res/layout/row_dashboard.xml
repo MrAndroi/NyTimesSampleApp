@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.sami.features.dashboard.domain.dto.DashBoardItemModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/gray_10"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="10dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_view_dashboard_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            imageUrl="@{model.thumbnail}"
+            radius="@{10}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_view_title"
+            style="@style/TextStyle.Header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="18sp"
+            android:maxLines="2"
+            android:text="@{model.title}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/image_view_dashboard_image"
+            app:layout_constraintTop_toTopOf="@+id/image_view_dashboard_image"
+            tools:text="Spelling Bee Buddy" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_view_description"
+            style="@style/TextStyle.Paragraph"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="@{model.description}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/image_view_dashboard_image"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_title"
+            tools:text="By Neil Berg, Matthew Conlen, Josh Katz, Aaron Krolik, Eve Washington and Eden Weingart" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_view_publish_date"
+            style="@style/TextStyle.Body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="@{model.date}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/image_view_dashboard_image"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_description"
+            tools:text="1 Day ago" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

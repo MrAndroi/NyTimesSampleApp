@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="data">Data</string>
+    <string name="sort"><u>Sort</u></string>
+    <string name="search">Search</string>
+    <string name="sorry_can_t_find_any_result">Sorry, Can\'t Find Any Result</string>
+</resources>

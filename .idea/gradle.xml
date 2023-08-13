@@ -18,6 +18,7 @@
             <option value="$PROJECT_DIR$/freatures/auth/base" />
             <option value="$PROJECT_DIR$/freatures/auth/login" />
             <option value="$PROJECT_DIR$/freatures/auth/register" />
+            <option value="$PROJECT_DIR$/freatures/dashboard" />
             <option value="$PROJECT_DIR$/freatures/main" />
             <option value="$PROJECT_DIR$/freatures/more" />
             <option value="$PROJECT_DIR$/freatures/splash" />

@@ -46,6 +46,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="16dp"
             android:ellipsize="end"
+            android:textAlignment="viewStart"
             android:maxLines="2"
             android:text="@{userModel.email}"
             app:layout_constraintEnd_toEndOf="parent"
@@ -59,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="Details"
+            android:text="@string/details"
             app:layout_constraintStart_toStartOf="@+id/image_view_profile_pic"
             app:layout_constraintTop_toBottomOf="@+id/image_view_profile_pic" />
 
@@ -82,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:maxLines="2"
-                android:text="National ID" />
+                android:text="@string/national_id" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/text_view_national_id"
@@ -104,7 +105,7 @@
                 android:layout_marginTop="10dp"
                 android:ellipsize="end"
                 android:maxLines="2"
-                android:text="Phone Number" />
+                android:text="@string/phone_number" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/text_view_phone_number"
@@ -126,7 +127,7 @@
                 android:layout_marginTop="10dp"
                 android:ellipsize="end"
                 android:maxLines="2"
-                android:text="Date of Birth" />
+                android:text="@string/date_of_birth" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/text_view_date_of_birth"
@@ -149,7 +150,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Settings"
+            android:text="@string/settings"
             app:layout_constraintStart_toStartOf="@+id/image_view_profile_pic"
             app:layout_constraintTop_toBottomOf="@+id/linear_layout_user_details" />
 
@@ -168,11 +169,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Logout"
+            android:text="@string/logout"
             android:textAllCaps="false"
             app:icon="@drawable/ic_logout"
             app:layout_constraintStart_toStartOf="@+id/view_line"
             app:layout_constraintTop_toBottomOf="@+id/view_line" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_change_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/change_language"
+            android:textAllCaps="false"
+            app:icon="@drawable/ic_language"
+            app:layout_constraintStart_toStartOf="@+id/view_line"
+            app:layout_constraintTop_toBottomOf="@+id/button_logout" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

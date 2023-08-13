@@ -2,4 +2,7 @@
 <resources>
     <string name="error_message_email_not_registered">Email is not found in our databases</string>
     <string name="error_message_invalid_password">Invalid password</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
 </resources>

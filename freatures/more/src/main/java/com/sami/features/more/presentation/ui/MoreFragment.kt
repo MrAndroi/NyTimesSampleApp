@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.os.LocaleListCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
@@ -13,6 +15,7 @@ import com.sami.core.datastore.models.UserDataModel
 import com.sami.core.navigation.Screen
 import com.sami.core.navigation.navigateToScreen
 import com.sami.features.more.databinding.FragmentMoreBinding
+import com.sami.features.more.domain.model.AppLanguages
 import com.sami.features.more.presentation.MoreViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -61,6 +64,9 @@ class MoreFragment : Fragment() {
         binding.buttonLogout.setOnClickListener {
             viewModel.logOut()
         }
+        binding.buttonChangeLanguage.setOnClickListener {
+            changeAppLanguage()
+        }
     }
 
     private fun handleUserData(userData: UserDataModel?) {
@@ -74,6 +80,21 @@ class MoreFragment : Fragment() {
                 navigateAndRemoveFromStack = true
             )
         }
+    }
+
+    private fun changeAppLanguage() {
+        val currentLang = AppCompatDelegate.getApplicationLocales().toLanguageTags().take(2)
+        val newLang = when (AppLanguages.valueOf(currentLang.uppercase())) {
+            AppLanguages.EN -> {
+                AppLanguages.AR
+            }
+
+            AppLanguages.AR -> {
+                AppLanguages.EN
+            }
+        }
+        val appLocale: LocaleListCompat = LocaleListCompat.forLanguageTags(newLang.name.lowercase())
+        AppCompatDelegate.setApplicationLocales(appLocale)
     }
 
     override fun onDestroyView() {

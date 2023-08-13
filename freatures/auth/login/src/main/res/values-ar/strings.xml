@@ -2,4 +2,7 @@
 <resources>
     <string name="error_message_email_not_registered">البريد الإلكتروني غير مسجل في قواعد بياناتنا</string>
     <string name="error_message_invalid_password">كلمة مرور غير صحيحة</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="login">تسجيل الدخول</string>
 </resources>

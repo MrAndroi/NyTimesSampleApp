@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="error_message_email_already_registered">Email Already registered, Please Login</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="national_id">National ID</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
 </resources>

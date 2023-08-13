@@ -25,7 +25,7 @@
                 android:layout_height="match_parent"
                 android:inputType="textEmailAddress"
                 android:imeOptions="actionNext"
-                android:hint="Email"
+                android:hint="@string/email"
                 style="@style/EditTextStyle"/>
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -45,7 +45,7 @@
                 android:layout_height="match_parent"
                 android:inputType="textPassword"
                 android:imeOptions="actionDone"
-                android:hint="Password"
+                android:hint="@string/password"
                 style="@style/EditTextStyle"/>
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -54,7 +54,7 @@
             android:id="@+id/button_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Register"
+            android:text="@string/login"
             android:textAllCaps="false"
             android:paddingVertical="15dp"
             android:layout_margin="20dp"/>
