@@ -17,6 +17,9 @@ Android application that fetches the most viewed news for NyTimes Api
 11. Okhttp Caching
 12. Hilt
 13. Navigation Component
+14. Unit Test
+15. Mockito
+16. Junit 4
 
 #### Features
 1. Dashboard
