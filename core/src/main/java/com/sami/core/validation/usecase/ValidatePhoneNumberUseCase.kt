@@ -4,8 +4,9 @@ import javax.inject.Inject
 
 class ValidatePhoneNumberUseCase @Inject constructor() {
 
-    private val phoneNumberRegex = Regex("^(077|078|079)\\d{7}$")
-    internal operator fun invoke(phoneNumber: String): Boolean {
-        return phoneNumberRegex.matches(phoneNumber)
+    private val phoneNumberRegex = Regex("^(\\+9627[789])\\d{7}$")
+
+    operator fun invoke(phoneNumber: String): Boolean {
+        return phoneNumberRegex.matches("+962$phoneNumber")
     }
 }

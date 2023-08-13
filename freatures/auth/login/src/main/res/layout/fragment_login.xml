@@ -25,6 +25,7 @@
                 android:layout_height="match_parent"
                 android:inputType="textEmailAddress"
                 android:imeOptions="actionNext"
+                android:textAlignment="viewStart"
                 android:hint="@string/email"
                 style="@style/EditTextStyle"/>
 
@@ -45,6 +46,7 @@
                 android:layout_height="match_parent"
                 android:inputType="textPassword"
                 android:imeOptions="actionDone"
+                android:textAlignment="viewStart"
                 android:hint="@string/password"
                 style="@style/EditTextStyle"/>
 

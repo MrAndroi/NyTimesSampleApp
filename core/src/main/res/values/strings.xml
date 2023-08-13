@@ -3,8 +3,8 @@
     <string name="ok">Ok</string>
     <string name="error_message_email">Incorrect email</string>
     <string name="error_message_password">Weak password: must be at least 8 characters with one uppercase letter and one number</string>
-    <string name="error_message_full_name">Invalid full name</string>
-    <string name="error_message_phone_number">Invalid phone number</string>
+    <string name="error_message_full_name">Invalid full name (Ex: Sami Shorman)</string>
+    <string name="error_message_phone_number">Invalid phone number: should start with 78 or 77 or 79</string>
     <string name="error_message_date_of_birth">Invalid date format use (DD/MM/YYYY)</string>
     <string name="error_message_national_id">Invalid national ID</string>
     <string name="general_error">Something went wrong!</string>
