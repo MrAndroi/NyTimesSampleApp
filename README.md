@@ -1,8 +1,7 @@
 ## NyTimesSample
 Android application that fetches the most viewed news for NyTimes Api
 
-[![Demo](https://s11.gifyu.com/images/ScBxc.gif "Demo")]
-
+![Demo](https://s11.gifyu.com/images/ScBxc.gif "Demo")
 
 #### Technologies
 1. Modular
