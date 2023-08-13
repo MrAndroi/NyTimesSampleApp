@@ -83,8 +83,14 @@ class MoreFragment : Fragment() {
     }
 
     private fun changeAppLanguage() {
-        val currentLang = AppCompatDelegate.getApplicationLocales().toLanguageTags().take(2)
-        val newLang = when (AppLanguages.valueOf(currentLang.uppercase())) {
+        val currentLang = AppCompatDelegate.getApplicationLocales().toLanguageTags().run {
+            if (this.isBlank()) {
+                AppLanguages.EN
+            } else {
+                AppLanguages.valueOf(this.take(2).uppercase())
+            }
+        }
+        val newLang = when (currentLang) {
             AppLanguages.EN -> {
                 AppLanguages.AR
             }
